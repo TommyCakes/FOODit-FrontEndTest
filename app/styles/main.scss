@@ -1,2 +1,12 @@
 @import 'scales';
 @import 'typography';
+
+@import 'header';
+
+@import 'meal-card';
+
+body {
+  text-align: center;
+  margin-top:-25px;
+  background:#F7F7F7;
+}

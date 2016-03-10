@@ -8,7 +8,7 @@
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="meal-card__curve">
-            <use fill="#FFFFFF" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+            <use fill="#FFF" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
             <use fill="none" xlink:href="#path-1"></use>
         </g>
     </g>
