@@ -60,6 +60,15 @@
       top:-105px;
       //margin:-105px auto 10px;
       background:#FFF;
+      .tags {
+        img {
+          width:30px;
+          height:30px;
+          position: relative;
+          top:-40px;
+          z-index:9999;
+        }
+      }
       .description {
         height:64px;
         overflow:hidden;
