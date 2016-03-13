@@ -22,13 +22,38 @@
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="header">
-        <button id="menu">
+        <button id="menu" ng-click="show = !show">
           <p>
             <!-- It's time to order some delicious food -->
           quantity: {{cart.quantity}}
           total: {{cart.total}}
+
           </p>
         </button>
+      </div>
+
+      <div id="cart" ng-show='show'>
+          <h4>Your Order</h4>
+          <p class="text">A Delicious Restaurant</p>
+          <br>
+        <div class="items" ng-repeat="i in cart.items">
+        <div class="buttons">
+          <ul>
+            <li><button>+</button></li>
+            <li>1</li>
+            <li><button>-</button></li>
+          </ul>
+        </div>
+
+          <div class="info">
+            <p>{{i.item}}</p>
+            <p class="price">£{{i.price}}</p>
+          </div>
+        </div>
+
+        <hr>
+        <button>Confirm Your Order</button>
+        £{{cart.total}}
       </div>
 
       <h4 class="text-muted">Your Delicious Restaurant</h4>

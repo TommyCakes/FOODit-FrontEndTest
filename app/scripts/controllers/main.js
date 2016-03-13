@@ -26,18 +26,26 @@ angular.module('jstestApp')
     }
     // $scope.main = data.meals[0].tags[0].replace(/#course:/g, '')
 	});
-  $scope.addToOrder = function(price) {
+  $scope.addToOrder = function(price, item) {
     $scope.cart.quantity += 1;
     $scope.cart.total += parseFloat(price);
-    console.log('Price is', price)
-    console.log($scope.cart.quantity)
+    $scope.cart.items.push({item, price});
+    console.log('Price is', price);
+    console.log($scope.cart.quantity);
+    console.log($scope.cart.items);
   };
   }
 ])
 
   .controller('HeaderCtrl', function($scope) {
+    $scope.show = false;
     $scope.cart = {
       quantity: 0,
-      total: 0
+      total: 0,
+      items: [ ]
     };
+    // $scope.show = false;
+    $scope.showCart = function() {
+      $scope.show = true;
+    }
   })

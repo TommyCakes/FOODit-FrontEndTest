@@ -20,6 +20,11 @@ describe('Controller: MainCtrl', function () {
     MainCtrl = $controller('MainCtrl', {
       $scope: scope
     });
+  describe('addToOrder', function() {
+    it('should increase the quanity by 1, and add the price to the cart total', function(){
+      expect($scope.quantity === 1);
+    }
+  })
   }));
 
 

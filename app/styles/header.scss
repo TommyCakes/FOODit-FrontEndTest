@@ -27,3 +27,61 @@
   text-align: left;
   margin-left:40px;
 }
+
+#cart {
+  position:absolute;
+  z-index:9999;
+  height:450px;
+  width:96%;
+  top:10px;
+  margin-right:10px;
+  background:#C83C3B;
+  color:white;
+  weight:400;
+  transition:all linear 0.5s;
+  h4, p {
+    text-align:left;
+  }
+  .items {
+    background:#D4514E;
+    display:inline-block;
+    color:white;
+    width:90%;
+    height:70px;
+    border:1px solid #b32e2b;
+    //padding: 0;
+    //top:37px;
+    margin-left:20px;
+    position: relative;
+    .buttons {
+      display:inline-block;
+      ul {
+        list-style:none;
+        li {
+          position: relative;
+          top:-12px;
+          left:-80px;
+        }
+      }
+    }
+    .info {
+      display:inline-block;
+      float:center;
+      position: relative;
+      top:-30px;
+      left:-70px;
+      p {
+        font-size:0.9em;
+      }
+      .price {
+        float:right;
+        position: relative;
+        left:100px;
+        top:-35px
+      }
+    }
+  }
+}
+#cart.ng-hide {
+  opacity:0;
+}
